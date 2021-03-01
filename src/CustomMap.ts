@@ -28,11 +28,11 @@ export class CustomMap {
       },
     });
 
-    marker.addListener('click', () => {
-      const infoWindow = new google.maps.InfoWindow({
-        content: mappable.markerContent(),
-      });
+    const infoWindow = new google.maps.InfoWindow({
+      content: mappable.markerContent(),
+    });
 
+    marker.addListener('click', () => {
       infoWindow.open(this.googleMap, marker);
     });
   }

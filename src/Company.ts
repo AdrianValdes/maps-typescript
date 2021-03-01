@@ -21,7 +21,7 @@ export class Company {
     return `
     <div>
           <h1>Company name is ${this.name}</h1>
-           <h3>Catchprhase: ${this.catchPhrase}</h3>
+           <h3>Catchphrase: ${this.catchPhrase}</h3>
     </div>
     `;
   }
